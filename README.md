@@ -87,6 +87,8 @@ I liked that idea, and wanted to recreate in a long time. And while I was thinki
 > But I have found some other interesting use cases. For example, I use it as an after death message:\
 > I create 2 packets. In first, I add all messages I want to send to everybody if something happens to me (information like passwords to my crypto accouns), and I set it to execute in the next year. In second packet I put remainder to myself to reschedule the first packet, and I set it to execute a week before the first packet.
 
+Front-end side of this application is at: [https://github.com/yaroslav-06/flase].
+
 ## Installation
 
 Install redis:
@@ -109,8 +111,8 @@ git clone https://github.com/yaroslav-06/flase_api.git
 cd flase_api
 ```
 
-If you want telegram working you first have to configure [https://github.com/yaroslav-06/api_telegram_sender](api_telegram_sender).\
-Then open internal/telegram/send.go, and set the const _your_api_key_, to be equal to _your_api_key_ from your [https://github.com/yaroslav-06/api_telegram_sender](api_telegram_sender):
+If you want telegram working you first have to configure [api_telegram_sender](https://github.com/yaroslav-06/api_telegram_sender).\
+Then open internal/telegram/send.go, and set the const _your_api_key_, to be equal to _your_api_key_ from your [api_telegram_sender](https://github.com/yaroslav-06/api_telegram_sender):
 ```bash
 vim internal/telegram/send.go
 ```

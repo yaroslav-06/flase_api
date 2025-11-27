@@ -3,11 +3,12 @@
 
 # Flase API docs
 This is an API, to schedule messages, and send them in different ways (but currently only telegram works).\
-Designed for **Linux**, but should also work on Macos.
+Designed for **Linux**, but should also work on Macos.\
+Front-end side of this application is at: [flase](https://github.com/yaroslav-06/flase).
 
 The inspiration behind the project was a TV-series, where the main character knew some infromation that endangered his life. So he programmed a server to release all that information in a specified time, if something happened to him.
 
-I liked that idea, and wanted to recreate in a long time. And while I was thinking about I though of some additional features:
+I liked that idea, and wanted to recreate it in a long time. And while I was thinking about it I though of some additional features:
 
 1) Multiple users can be connected to the same server. To use API directly, you should first login using _websocket send_ (hereafter referred to as an API call):
 ```json5
@@ -86,8 +87,6 @@ I liked that idea, and wanted to recreate in a long time. And while I was thinki
 > The particular example from the TV-show is very interesting, but not that common in the real life.\
 > But I have found some other interesting use cases. For example, I use it as an after death message:\
 > I create 2 packets. In first, I add all messages I want to send to everybody if something happens to me (information like passwords to my crypto accouns), and I set it to execute in the next year. In second packet I put remainder to myself to reschedule the first packet, and I set it to execute a week before the first packet.
-
-Front-end side of this application is at: [https://github.com/yaroslav-06/flase].
 
 ## Installation
 

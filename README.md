@@ -124,7 +124,7 @@ Now this test should be successful:
 go test ./internal/telegram
 ```
 
-Now you can run the code (at first execution it will as for admin user and password):
+Now you can run the code (at first execution it will ask for admin user and password):
 ```bash
 go run cmd/main.go
 ```
